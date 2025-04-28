@@ -88,7 +88,7 @@ namespace PadillaGP1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("id,nombre,fechaInicio,puntosAcumulados,tipoRecompensa")] PlanDeRecompensas planDeRecompensas)
         {
-            if (id != planDeRecompensas.Id)
+            if (id != planDeRecompensas.id)
             {
                 return NotFound();
             }
