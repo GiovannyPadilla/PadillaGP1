@@ -12,7 +12,7 @@ using PadillaGP1.Data;
 namespace PadillaGP1.Migrations
 {
     [DbContext(typeof(PadillaGP1Context))]
-    [Migration("20250428134014_Inicial")]
+    [Migration("20250428151313_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />
