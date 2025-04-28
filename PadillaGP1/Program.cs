@@ -1,4 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using PadillaGP1.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<PadillaGP1Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("PadillaGP1Context") ?? throw new InvalidOperationException("Connection string 'PadillaGP1Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

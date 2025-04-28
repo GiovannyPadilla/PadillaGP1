@@ -20,7 +20,7 @@ namespace PadillaGP1.Models
         [Display(Name = "Fecha de Nacimiento")]
         public DateTime FechaNacimiento { get; set; }
 
-        // Relación
+       
         public ICollection<Reserva> Reservas { get; set; }
     }
 
